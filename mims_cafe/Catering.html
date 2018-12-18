@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catering</title>
+    <link rel="icon" href="favicon/1. Favicon 16px.ico" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e3d6ce;
+        }
+
+        .container {
+            width: 1180px;
+            height: 1095px;
+            background-color: #e3d6ce;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        a {
+            color: #6a615c;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:hover {
+            cursor: pointer;
+            color: #e3d6ce;
+        }
+
+        header {
+            width: 860px;
+            height: 170px;
+            background-color: rgba(72, 105, 125, 0.2);
+            background-image: url("cafe_images/contact1.png");
+            background-repeat: no-repeat;
+            background-position-x: -50px;
+            background-position-y: -70px;
+            text-align: center;
+            padding-top: 50px;
+            font-size: 55px;
+            color: white;
+            text-shadow: -1px 5px 5px #182c44;
+            font-family: "Quicksand", sans-serif;
+            border-radius: 15px;
+            margin: 20px auto;
+            position: relative
+        }
+
+        .nav_container {
+            width: 860px;
+            height: 100px;
+            margin: 0 auto;
+            position: relative;
+
+        }
+
+        .navbar {
+            Width: 168px;
+            Height: 35px;
+            border-radius: 3px;
+            background-color: #cdb3a2;
+            Margin-top: 20px;
+            text-align: center;
+            line-height: 35px;
+            font-weight: bold;
+            font-family: "Century Gothic", sans-serif;
+            display: inline-block;
+        }
+
+        p {
+            line-height: 26px;
+            margin-left: 20px;
+            font-family: "Century Gothic", sans-serif;
+
+        }
+
+        h3 {
+            margin-left: 175px;
+            margin-top: 10px;
+            font-family: "Quicksand", sans-serif;
+        }
+
+        .maincontents {
+            width: 350px;
+            height: 370px;
+            float: left;
+            margin: 20px 10px 20px 78px;
+            padding-left: 30px;
+            padding-top: 10px;
+        }
+
+        .style_1 {
+            color: red;
+        }
+
+        .style_2 {
+            font-style: italic;
+            color: red;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #182c44;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #48697c;
+        }
+
+        .form_container {
+            width: 600px;
+            height: 800px;
+            margin: -40px 80px 10px 20px;
+            border-radius: 5px;
+            background-color: #b0bcca;
+            padding: 20px;
+            font-family: "Quicksand", sans-serif;
+            position: relative;
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>Catering</header>
+    <div class="nav_container">
+        <div class="navbar"><a href="home.html">HOME</a></div>
+        <div class="navbar"><a href="Menu.html">MENU</a></div>
+        <div class="navbar"><a href="Reviews.html">REVIEWS</a></div>
+        <div class="navbar"><a href="Catering.html">CATERING</a></div>
+        <div class="navbar"><a href="Contact.html"> CONTACT</a></div>
+    </div><!--end tag of nav_container-->
+
+
+    <h3>Catering Order Request</h3>
+
+    <div class="maincontents">
+        <!--<h3>Catering Order Request</h3>-->
+        <p>We provide a buffet of items from our menu that are suitable for any occasion.
+            Delivery is <span class="style_1">free of charge</span>.
+            <br><br>
+            You may call us during our business hours <span class="style_2">(Mon.-Fri., 11am-9pm)</span> at <span
+                    class="style_1">651-646-0456</span>
+            or fill out the catering
+            request.
+            <br><br>
+            If you have any further questions or need more details,
+            you may contact us at <span class="style_2">shaheensinc@gmail.com</span>.
+            We will respond to you within 24 hours. </p>
+    </div> <!-- closing tag of main contents-->
+
+
+    <div class="form_container">
+        <form action="/action_page.php">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="First and Last Name..">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone number" placeholder="">
+            <label for="date">Event Date</label>
+            <input type="text" id="date" name="event date" placeholder="MM/DD/YYYY">
+            <label for="location">Event Location</label>
+            <input type="text" id="location" name="event location">
+            <label for="guests">Number of Guests</label>
+            <input type="text" id="guests" name="guests number">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" placeholder="Additional notes.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div><!--end tag of form_container-->
+
+
+</div> <!-- closing tag for container-->
+</body>
+</html>
